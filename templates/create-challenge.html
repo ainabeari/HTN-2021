@@ -1,12 +1,17 @@
 {% extends "base.html" %}
-{% block title %}Challenges {% endblock %}
+{% block title %} New Challenge  {% endblock %}
 
 {% block content %}
 
 <div class="container-fluid">
-    <div class="row padding challenge-title">
+    <div class="row padding">
         <div class="col-12 d-flex ">
-            <h1 id="main-title">Drink Water</h1>
+            <h1 id="new-challenge-title">Create new challenge</h1>
+        </div>
+    </div>
+    <div class="row padding">
+        <div class="col-12 d-flex ">
+            <h1 id="new-challenge-title">[image]</h1>
         </div>
     </div>
 </div>
@@ -14,26 +19,24 @@
 <div class="container-fluid">
     <div class="row padding lower-section">
         <div class="col-12 task-panel">
-            <div class="card">
-                <div class="card-body">
-                    Drink Water
+            <form>
+                <div class="form-group">
+                    <input type="challengeName" class="form-control" placeholder="Add Challenge Name">
                 </div>
-            </div>
+            </form>
         </div> 
-        <div class="col-12 task-panel">
-            <div class="card">
-                <div class="card-body">
-                    Exercise 
-                </div>
-            </div>
+    </div>
+    <div class="form-group row padding lower-section">
+        <label for="example-date-input" class="col-2 col-form-label">Start Date</label>
+        <div class="col-10">
+          <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
         </div>
-        <div class="col-12 task-panel">
-            <div class="card">
-                <div class="card-body">
-                    Smile
-                </div>
-            </div>
-        </div> 
+    </div>
+    <div class="form-group row padding lower-section">
+        <label for="example-date-input" class="col-2 col-form-label">End Date</label>
+        <div class="col-10">
+          <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+        </div>
     </div>
 </div>
 <div class="container-fluid">

@@ -1,0 +1,89 @@
+.padding {
+  padding-top: 5%;
+  padding-bottom: 0%;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+#main-title {
+  margin-top: 30px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 50%;
+  /* identical to box height, or 50% */
+
+  color: #000000;
+}
+
+#percent {
+  font-size: 58px;
+}
+
+.wheel {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+#subtitle {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  /* identical to box height, or 200% */
+
+  letter-spacing: 1px;
+
+  color: #000000;
+}
+
+.lower-section {
+  background-color: lightgrey;
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  max-width: 100%;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+.task-panel,
+.challenge-panel {
+  padding-bottom: 10px;
+}
+
+.card {
+  background-color: lightskyblue;
+}
+
+.challenge-card {
+  height: 150px;
+}
+
+.challenge-title {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  background-color: lightgray;
+}
+
+#incentive-text {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+/*   FOR NEW CHALLENGES   */
+
+#new-challenge-title {
+  font-size: 20px;
+}
