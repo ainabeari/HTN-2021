@@ -1,0 +1,17 @@
+
+{
+	"Name": "Obe",
+	"Challenges": {
+		"Drink Water Everyday": {
+			"Task 1": "Drink three cups at breakfast",
+			"Task 2": "Drink two cups at lunch",
+			"Task 3": "Drink 1 litre after workout",
+			"Task 4": "Drink three cups at dinner"
+		},
+		
+		"Work out every other day": {
+			"Task 1": "5K Run on Monday"
+		}
+		}
+
+};
