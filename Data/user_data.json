@@ -1,7 +1,6 @@
-
 {
-	"Name": "Obe",
-	"Challenges": {
+	"name": "Obe",
+	"challenges": {
 		"Drink Water Everyday": {
 			"Task 1": "Drink three cups at breakfast",
 			"Task 2": "Drink two cups at lunch",
@@ -14,4 +13,4 @@
 		}
 		}
 
-};
+}
