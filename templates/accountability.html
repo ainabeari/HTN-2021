@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block title %}Accountability {% endblock %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row padding new-challenge-title">
+        <div class="col-12 d-flex">
+            <h1 id="new-challenge-title">Accountability</h1>
+        </div>
+    </div>
+</div>
+
+<section class="container-padding" id="accountability">
+    <div class="container-fluid">
+        <div class="row padding lower-section" id="lower-section-no-top">
+            <div class="col-12">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control challenge-field-name-p1" placeholder="Write your punishment here!">
+
+                        <label class="p2" id="new-challenge-field-label">Describe your challenge.</label>
+                        <input type="text" class="form-control challenge-field" placeholder="eg. Stay hydrated with the CS club!">
+                    </div>
+                </form>
+            </div> 
+        </div>
+        <div class="row padding lower-section">
+            <div class="col-12">
+                <h3>Participants</h3>
+                <button class="btn-add-ppl">App People </button>
+
+                <img class="plus-icon" src="static\images\plus icon.svg">
+            </div>
+
+        </div>
+    </div>
+
+
+</section>
+
+{% endblock%}

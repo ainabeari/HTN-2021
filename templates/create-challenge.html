@@ -13,6 +13,8 @@
         </form>
     </div>
 </div>-->
+
+<a href="/accountability"><button class="btn-new-challenge" id="btn-next-page"><img src="static\images\arrow white icon.svg"></button></a>
  
 <div class="container-fluid">
     <div class="row padding new-challenge-title">
@@ -20,19 +22,17 @@
             <h1 id="new-challenge-title">Create new challenge</h1>
         </div>
     </div>
-    <div class="row">
-        <div class="col-12 d-flex ">
-            
-        </div>
-    </div>
 </div>
 <div class="container-fluid">
-    <img class="new-challenge-image" src="..\static\images\challenge2.jpg" alt="NOO">
+    <svg width="100%" height="160">
+        <rect width="100%" height="160" style="fill:rgb(228, 227, 227);stroke-width:0;stroke:rgb(0,0,0)" />
+      </svg>
+    <!--<img class="new-challenge-image" src="..\static\images\challenge2.jpg" alt="NOO">-->
 </div>
 
 <section class="container-padding" id="new-challenge">
     <div class="container-fluid">
-        <div class="row padding lower-section">
+        <div class="row padding lower-section"  id="lower-section-no-top">
             <div class="col-12 task-panel">
                 <form>
                     <div class="form-group">
@@ -59,8 +59,43 @@
                             <label class="p2 col-8" id="new-challenge-field-count-label"> Time(s) per day </label>
                         </div>
 
-                        <label class="p1" id="new-challenge-field-label">Repeat Every Day</label>
-                        <input type="checkbox" checked data-toggle="toggle" data-size="xs" class="toggler">
+                        <div class="row lower-section">
+                            <label class="p1 switch-label" id="new-challenge-field-label">Repeat Every Day</label>
+                            <div class="swith-container">
+                                
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-secondary">
+                                <input type="checkbox" name="options" id="option2" autocomplete="off"> S
+                              </label>
+                            <label class="btn btn-secondary">
+                                <input type="checkbox" name="options" id="option2" autocomplete="off"> M
+                            </label>
+                            <label class="btn btn-secondary">
+                                <input type="checkbox" name="options" id="option3" autocomplete="off"> T
+                            </label>
+                            <label class="btn btn-secondary">
+                                <input type="checkbox" name="options" id="option3" autocomplete="off"> W
+                            </label>
+                            <label class="btn btn-secondary">
+                                <input type="checkbox" name="options" id="option3" autocomplete="off"> T
+                            </label>
+                            <label class="btn btn-secondary">
+                                <input type="checkbox" name="options" id="option3" autocomplete="off"> F
+                            </label>
+                            <label class="btn btn-secondary">
+                                <input type="checkbox" name="options" id="option3" autocomplete="off"> S
+                            </label>
+                          </div>
+                        
+                        
+                        
                         
                     </div>
                 </form>
