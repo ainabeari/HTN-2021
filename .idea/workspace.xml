@@ -82,6 +82,8 @@
       <option name="presentableId" value="Default" />
       <updated>1610821172778</updated>
       <workItem from="1610821177120" duration="20087000" />
+      <workItem from="1610872603059" duration="1413000" />
+      <workItem from="1610874038944" duration="5725000" />
     </task>
     <servers />
   </component>
@@ -89,6 +91,6 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/HTN_2021$HTN_2021.coverage" NAME="HTN-2021 Coverage Results" MODIFIED="1610869695431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/HTN_2021$HTN_2021.coverage" NAME="HTN-2021 Coverage Results" MODIFIED="1610878831030" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
