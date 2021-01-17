@@ -6,7 +6,12 @@
 <div class="container-fluid">
     <div class="row padding">
         <div class="col-12 d-flex ">
-            <h1 id="new-challenge-title">Create new challenge</h1>
+            <h1 id="new-challenge-title">{{data['users']['user1']['name']}}</h1>
+            <form method ="post" enctype="multipart/form-data">
+                <input name="title" id="title">
+                <input name="fruit" id="fruit">
+                <input type = "submit" value = "save">
+            </form>
         </div>
     </div>
     <div class="row padding">

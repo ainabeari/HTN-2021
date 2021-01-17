@@ -48,9 +48,11 @@
 				}
 			}
 		},
-		"user2": "Krissa",
-		"challenges": {
+		"user2": {
+			"name": "Krissa",
+			"challenges": {
 
+			}
 		}
 	}
 }
