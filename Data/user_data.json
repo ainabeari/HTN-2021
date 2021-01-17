@@ -3,57 +3,26 @@
 		"user1": {
 			"name": "Obe",
 			"challenges": {
-				"Drink Water Everyday": {
-					"Tasks": {
-						"Task 1": {
-							"description": "Drink three cups at breakfast",
-							"type": "daily",
-							"complete": true
-						},
-						"Task 2": {
-							"description": "Drink two cups at lunch",
-							"type": "daily",
-							"complete": false
-						},
-						"Task 3": {
-							"description": "Drink 1 litre after workout",
-							"type": "weekly",
-							"complete": true
-						},
-						"Task 4": {
-							"description": "Drink three cups at dinner",
-							"type": "daily",
-							"complete": false
-						}
-					},
-					"Progress": {
-						"total days": 14,
-						"current day": 2,
-						"progress": "14%"
+				"challenge 1": {
+					"challenge_name": "Drink Water Everyday",
+					"description": "Drink three cups at breakfast",
+					"type": "daily",
+					"complete": true,
+					"total days": 14,
+					"current day": 2,
+					"progress": "14%"
 					}
 				},
-				"Work out every other day": {
-					"Tasks": {
-						"Task 1": {
-							"description": "5K Run on Monday",
-							"type": "weekly",
-							"complete": true
-						}
-					},
-					"Progress": {
-						"total days": 30,
-						"current day": 25,
-						"progress": "83%"
-					}
+				"challenge 2": {
+					"challenge_name": "Workout",
+					"description": "Let's get fit",
+					"type": "weekly",
+					"complete": true,
+					"total days": 14,
+					"current day": 2,
+					"progress": "14%"
+				}
 				}
 			}
-		},
-		"user2": {
-			"name": "Krissa",
-			"challenges": {
-
-			}
 		}
-	}
-}
 

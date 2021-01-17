@@ -14,8 +14,8 @@
     </div>
 </div>-->
 
-<a href="/accountability"><button class="btn-new-challenge" id="btn-next-page"><img src="static\images\arrow white icon.svg"></button></a>
- 
+
+
 <div class="container-fluid">
     <div class="row padding new-challenge-title">
         <div class="col-12 d-flex">
@@ -34,10 +34,10 @@
     <div class="container-fluid">
         <div class="row padding lower-section"  id="lower-section-no-top">
             <div class="col-12 task-panel">
-                <form>
+                <form method ="post" enctype="multipart/form-data">
                     <div class="form-group">
-                        <input type="text" class="form-control challenge-field-name" placeholder="Challenge Name">
-
+                        <input type="text" name = "challenge_name" class="form-control challenge-field-name" placeholder="Challenge Name">
+                        <a href="/accountability"><button input type = "submit" value = "save" class="btn-new-challenge" id="btn-next-page"><img src="static\images\arrow white icon.svg"></button></a>
                         <label class="p2" id="new-challenge-field-label">Describe your challenge.</label>
                         <input type="text" class="form-control challenge-field" placeholder="eg. Stay hydrated with the CS club!">
 

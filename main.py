@@ -5,7 +5,7 @@ app = Flask(__name__)
 # Reading User Data
 ArielleDir = 'C:\\Users\\Arielle\\Documents\\GitHub\\HTN-2021\\data\\user_data.json'
 AllenDir = 'C:\\Users\\Allen\\Documents\\GitHub\\HTN-2021\\data\\user_data.json'
-with open(AllenDir, "r") as read_file:
+with open(ArielleDir, "r") as read_file:
     data = json.load(read_file)  # dictionary type
 
 # Assigning variables for the user
@@ -34,37 +34,38 @@ def challenges():  # Page 3 (current challenges)
 def create_challenges():  # Page 3 (create new challenge)
     if request.method == 'POST':
         challenge_name = request.form['challenge_name']
-        start = request.form['start']
-        end = request.form['end']
-        task = request.form['task']  # This example only has one task
-        description = request.form['description']
-        type = request.form['type']
-        # Insert math for calculating the progress
-        length = 0
-
-        # Updating json file (using example for user 2):
-        data.get('users').get('user2').get(
-            'challenges').update({challenge_name: {}})
-        data.get('users').get('user2').get('challenges').get(
-            challenge_name).update({"Tasks": {}})
-        data.get('users').get('user2').get('challenges').get(
-            challenge_name).get("Tasks").update({"Task 1": {}})
-        # Add other stuff like description, how often after check with Allen:
-        data.get('users').get('user2').get('challenges').get(challenge_name).get(
-            "Tasks").get("Task 1").update({"description": description})
-        data.get('users').get('user2').get('challenges').get(
-            challenge_name).get("Tasks").get("Task 1").update({"type": type})
-        data.get('users').get('user2').get('challenges').get(challenge_name).get(
-            "Tasks").get("Task 1").update({"complete": False})
-
-        data.get('users').get('user2').get('challenges').get(
-            challenge_name).get("Tasks").update({"Progress": {}})
-        data.get('users').get('user2').get('challenges').get(challenge_name).get(
-            "Tasks").get("Progress").update({"total days": length})
-        data.get('users').get('user2').get('challenges').get(challenge_name).get(
-            "Tasks").get("Progress").update({"current day": 0})
-        data.get('users').get('user2').get('challenges').get(
-            challenge_name).get("Tasks").get("Progress").update({"progress": 0})
+        print(challenge_name)
+        # start = request.form['start']
+        # end = request.form['end']
+        # task = request.form['task']  # This example only has one task
+        # description = request.form['description']
+        # type = request.form['type']
+        # # Insert math for calculating the progress
+        # length = 0
+        #
+        # # Updating json file (using example for user 2):
+        # data.get('users').get('user2').get(
+        #     'challenges').update({challenge_name: {}})
+        # data.get('users').get('user2').get('challenges').get(
+        #     challenge_name).update({"Tasks": {}})
+        # data.get('users').get('user2').get('challenges').get(
+        #     challenge_name).get("Tasks").update({"Task 1": {}})
+        # # Add other stuff like description, how often after check with Allen:
+        # data.get('users').get('user2').get('challenges').get(challenge_name).get(
+        #     "Tasks").get("Task 1").update({"description": description})
+        # data.get('users').get('user2').get('challenges').get(
+        #     challenge_name).get("Tasks").get("Task 1").update({"type": type})
+        # data.get('users').get('user2').get('challenges').get(challenge_name).get(
+        #     "Tasks").get("Task 1").update({"complete": False})
+        #
+        # data.get('users').get('user2').get('challenges').get(
+        #     challenge_name).get("Tasks").update({"Progress": {}})
+        # data.get('users').get('user2').get('challenges').get(challenge_name).get(
+        #     "Tasks").get("Progress").update({"total days": length})
+        # data.get('users').get('user2').get('challenges').get(challenge_name).get(
+        #     "Tasks").get("Progress").update({"current day": 0})
+        # data.get('users').get('user2').get('challenges').get(
+        #     challenge_name).get("Tasks").get("Progress").update({"progress": 0})
 
     return render_template("create-challenge.html", data=data)
 
