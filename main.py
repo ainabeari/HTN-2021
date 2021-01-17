@@ -1,5 +1,27 @@
 from flask import Flask, redirect, url_for, render_template, request
 import json
+from google.cloud import firestore
+
+#Initializing google cloud services
+import firebase_admin
+from firebase_admin import credentials
+from firebase_admin import firestore
+
+# Use the application default credentials
+cred = credentials.ApplicationDefault()
+firebase_admin.initialize_app(cred, {
+    'traq-18583': project_id,
+})
+
+db = firestore.client()
+
+doc_ref = db.collection(u'users').document(u'alovelace')
+doc_ref.set({
+    u'first': u'Ada',
+    u'last': u'Lovelace',
+    u'born': 1815
+})
+
 
 app = Flask(__name__)
 # Reading User Data
