@@ -3,11 +3,11 @@
 
 {% block content %}
 
-<section id="main">
+<section class="container-padding" id="main" >
 <div class="container-fluid">
     <div class="row padding">
         <div class="col-12 d-flex">
-            <h1 id="main-title">Hi Sam!</h1>
+            <h1 id="main-title">Hi {{content}}</h1>
         </div>
         <div class="col-12 d-flex justify-content-center wheel">
             <!--<svg width="50%" height="50%" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg" id="wheel-img">
@@ -21,42 +21,95 @@
     </div>
 </div>
 
-<div class="container-fluid">
+<div class="container-fluid component-padding" id="dash-todo">
     <div class="row padding lower-section">
-        <div class="col-12 d-flex">
-            <h3>Today's to-do:</h3>
+        <div class="col-12 d-flex component-title">
+            <h3>Upcoming to-do</h3>
         </div> 
+    </div>
+    <div class="row lower-section">
         <div class="col-12 task-panel">
-            <div class="card">
-                <div class="card-body">
-                    Drink Water
+            <div class="card task-card">
+                <div class="card-body task-card-body row">
+                    <div class="col-2 dash-task d-flex justify-content-center">
+                        <svg width="24" height="37" viewBox="0 0 24 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.7966 0C5.91677 7.15184 0.474609 15.6362 0.474609 23.2374C0.474609 30.8387 5.54727 37 11.7966 37C18.0461 37 23.1187 30.8387 23.1187 23.2374C23.1187 15.6362 17.6764 7.15184 11.7966 0ZM4.56654 21.8082C4.7139 21.788 4.86372 21.8029 5.00477 21.8518C5.14583 21.9006 5.27446 21.9822 5.38102 22.0903C5.48758 22.1985 5.5693 22.3304 5.62006 22.4762C5.67083 22.622 5.68931 22.778 5.67413 22.9323C5.4664 25.345 6.86398 28.616 8.4277 29.8056C8.54604 29.8783 8.64849 29.9762 8.72846 30.0927C8.80844 30.2093 8.86416 30.342 8.89206 30.4824C8.91996 30.6228 8.91941 30.7678 8.89046 30.9079C8.8615 31.0481 8.80478 31.1804 8.72393 31.2963C8.64308 31.4122 8.5399 31.5092 8.42102 31.581C8.30213 31.6528 8.17017 31.6978 8.03361 31.7132C7.89706 31.7286 7.75893 31.7139 7.62811 31.6703C7.49728 31.6266 7.37666 31.5549 7.27398 31.4596C4.91408 29.6645 3.42282 26.0336 3.70508 22.7557C3.72121 22.518 3.81594 22.2935 3.97308 22.1207C4.13022 21.9478 4.34 21.8374 4.56654 21.8082Z" fill="#F4F4F4"/>
+                        </svg>   
+                    </div>
+                    <div class="col-8 text-left dash-task">
+                        <h4 id="dash-task-t">Drink Water</h4>
+                        <p class="p2 text-left" id="dash-task-p">Drink up gang gang</p>
+                    </div>
+                    <div class="input-group-prepend col-1 dash-task d-flex justify-content-center">
+                        <input class="task-check" type="checkbox">
+                    </div>
                 </div>
             </div>
         </div> 
+    </div>
+    <div class="row lower-section">
         <div class="col-12 task-panel">
-            <div class="card">
-                <div class="card-body">
-                    Exercise 
+            <div class="card task-card">
+                <div class="card-body task-card-body row">
+                    <div class="col-2 dash-task d-flex justify-content-center">
+                        <svg width="24" height="37" viewBox="0 0 24 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.7966 0C5.91677 7.15184 0.474609 15.6362 0.474609 23.2374C0.474609 30.8387 5.54727 37 11.7966 37C18.0461 37 23.1187 30.8387 23.1187 23.2374C23.1187 15.6362 17.6764 7.15184 11.7966 0ZM4.56654 21.8082C4.7139 21.788 4.86372 21.8029 5.00477 21.8518C5.14583 21.9006 5.27446 21.9822 5.38102 22.0903C5.48758 22.1985 5.5693 22.3304 5.62006 22.4762C5.67083 22.622 5.68931 22.778 5.67413 22.9323C5.4664 25.345 6.86398 28.616 8.4277 29.8056C8.54604 29.8783 8.64849 29.9762 8.72846 30.0927C8.80844 30.2093 8.86416 30.342 8.89206 30.4824C8.91996 30.6228 8.91941 30.7678 8.89046 30.9079C8.8615 31.0481 8.80478 31.1804 8.72393 31.2963C8.64308 31.4122 8.5399 31.5092 8.42102 31.581C8.30213 31.6528 8.17017 31.6978 8.03361 31.7132C7.89706 31.7286 7.75893 31.7139 7.62811 31.6703C7.49728 31.6266 7.37666 31.5549 7.27398 31.4596C4.91408 29.6645 3.42282 26.0336 3.70508 22.7557C3.72121 22.518 3.81594 22.2935 3.97308 22.1207C4.13022 21.9478 4.34 21.8374 4.56654 21.8082Z" fill="#F4F4F4"/>
+                        </svg>   
+                    </div>
+                    <div class="col-8 text-left dash-task">
+                        <h4 id="dash-task-t">Drink Water</h4>
+                        <p class="p2 text-left" id="dash-task-p">Drink up gang gang</p>
+                    </div>
+                    <div class="input-group-prepend col-1 dash-task d-flex justify-content-center">
+                        <input class="task-check" type="checkbox">
+                    </div>
                 </div>
             </div>
-        </div>
+        </div> 
+    </div>
+    <div class="row lower-section">
         <div class="col-12 task-panel">
-            <div class="card">
-                <div class="card-body">
-                    Smile
+            <div class="card task-card">
+                <div class="card-body task-card-body row">
+                    <div class="col-2 dash-task d-flex justify-content-center">
+                        <svg width="24" height="37" viewBox="0 0 24 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.7966 0C5.91677 7.15184 0.474609 15.6362 0.474609 23.2374C0.474609 30.8387 5.54727 37 11.7966 37C18.0461 37 23.1187 30.8387 23.1187 23.2374C23.1187 15.6362 17.6764 7.15184 11.7966 0ZM4.56654 21.8082C4.7139 21.788 4.86372 21.8029 5.00477 21.8518C5.14583 21.9006 5.27446 21.9822 5.38102 22.0903C5.48758 22.1985 5.5693 22.3304 5.62006 22.4762C5.67083 22.622 5.68931 22.778 5.67413 22.9323C5.4664 25.345 6.86398 28.616 8.4277 29.8056C8.54604 29.8783 8.64849 29.9762 8.72846 30.0927C8.80844 30.2093 8.86416 30.342 8.89206 30.4824C8.91996 30.6228 8.91941 30.7678 8.89046 30.9079C8.8615 31.0481 8.80478 31.1804 8.72393 31.2963C8.64308 31.4122 8.5399 31.5092 8.42102 31.581C8.30213 31.6528 8.17017 31.6978 8.03361 31.7132C7.89706 31.7286 7.75893 31.7139 7.62811 31.6703C7.49728 31.6266 7.37666 31.5549 7.27398 31.4596C4.91408 29.6645 3.42282 26.0336 3.70508 22.7557C3.72121 22.518 3.81594 22.2935 3.97308 22.1207C4.13022 21.9478 4.34 21.8374 4.56654 21.8082Z" fill="#F4F4F4"/>
+                        </svg>   
+                    </div>
+                    <div class="col-8 text-left dash-task">
+                        <h4 id="dash-task-t">Drink Water</h4>
+                        <p class="p2 text-left" id="dash-task-p">Drink up gang gang</p>
+                    </div>
+                    <div class="input-group-prepend col-1 dash-task d-flex justify-content-center">
+                        <input class="task-check" type="checkbox">
+                    </div>
                 </div>
             </div>
         </div> 
     </div>
 </div>
 
-<div class="container-fluid">
+<div class="container-fluid component-padding" id="dash-challenge">
     <div class="row padding lower-section">
-        <div class="col-12 d-flex">
-            <h3>Current Challenges</h3>
+        <div class="col-12 d-flex component-title">
+            <h3>My Challenges</h3>
         </div> 
     </div>
-    <div class="row padding lower-section">
+    <div class="row lower-section">
+        <div class="col-12">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="../images/challenge1.png" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="C://Users/allen/Documents/GitHub/HTN-2021/images/challenge1.png" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="C:\Users\allen\Documents\GitHub\HTN-2021\images\challenge1.png" alt="Third slide">
+                  </div>
+                </div>
+              </div>
         <div class="col-6 challenge-panel">
             <div class="card">
                 <div class="card-body challenge-card">

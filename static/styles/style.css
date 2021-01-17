@@ -1,8 +1,37 @@
+.container-padding {
+  margin-top: 20px;
+  padding-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 .padding {
   padding-top: 5%;
-  padding-bottom: 0%;
+  padding-bottom: 5%;
   padding-left: 0%;
   padding-right: 0%;
+}
+
+.component-padding {
+  margin-top: 5%;
+  padding-top: 1%;
+  padding-bottom: 5%;
+  padding-left: 1%;
+  padding-right: 1%;
+
+  border-radius: 16px;
+}
+
+.component-title {
+  padding-top: 5px;
+}
+
+#dash-todo {
+  background: #e6eaf5;
+}
+
+#dash-challenge {
+  background: #fee8e9;
 }
 
 h1 {
@@ -12,18 +41,23 @@ h1 {
 #main-title {
   margin-top: 30px;
 
-  font-family: Roboto;
+  font-family: "Abhaya Libre", serif;
   font-style: normal;
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 50%;
-  /* identical to box height, or 50% */
-
-  color: #000000;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  color: #494949;
 }
 
 #percent {
-  font-size: 58px;
+  font-family: "Abhaya Libre", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 14px;
+  color: #494949;
 }
 
 .wheel {
@@ -32,20 +66,16 @@ h1 {
 }
 
 #subtitle {
-  font-family: Roboto;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 24px;
-  /* identical to box height, or 200% */
-
-  letter-spacing: 1px;
-
-  color: #000000;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 14px;
+  color: #848484;
 }
 
 .lower-section {
-  background-color: lightgrey;
+  /*background-color: lightgrey;*/
   width: 100%;
   padding-right: 0px;
   padding-left: 0px;
@@ -55,26 +85,104 @@ h1 {
 }
 
 h3 {
-  font-size: 20px;
+  font-family: "Abhaya Libre", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  color: #494949;
+}
+
+h4 {
+  font-family: "Abhaya Libre", serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 14px;
+  color: #f7f7f7;
+}
+
+.p2 {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 14px;
+  color: #f7f7f7;
 }
 
 .task-panel,
 .challenge-panel {
-  padding-bottom: 10px;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 .card {
   background-color: lightskyblue;
 }
 
+.task-card {
+  background: #5975b7;
+  border-radius: 16px;
+}
+
+.task-card-body {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.dash-task {
+  margin: 0;
+  padding: 0;
+}
+
+#dash-task-t {
+  padding-left: 2%;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  margin: 0;
+}
+
+#dash-task-p {
+  padding-left: 2%;
+  padding-top: 1%;
+  padding-bottom: 2%;
+  margin: 0;
+}
+
+.task-check {
+  background: #f7f7f7;
+  width: 40px;
+  height: 40px;
+  border: #f7f7f7;
+}
+
 .challenge-card {
   height: 150px;
 }
 
+.carousel-item {
+  size: 100px;
+}
+
+/*CHALLENGE*/
+
 .challenge-title {
-  padding-top: 80px;
+  padding-top: 120px;
   padding-bottom: 40px;
-  background-color: lightgray;
+  background-color: #5975b7;
+}
+#challenge-title {
+  font-family: "Abhaya Libre", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  color: #f7f7f7;
 }
 
 #incentive-text {
