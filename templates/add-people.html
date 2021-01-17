@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+{% block title %}Add People {% endblock %}
+
+{% block content %}
+
+<section class="container-padding" id="people">
+    <div class="container-fluid">
+        <div class="row lower-section">
+            <div class="col-12 back-container">
+                <a href="/accountability"><button id="back-arrow"><img src="static\images\back red icon.svg"></button></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row padding lower-section" id="people-title">
+            <div class="col-12">
+                <h3>Add Participants</h3>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control challenge-field-name-p1" placeholder="Search">
+                    </div>
+                </form>
+            </div> 
+        </div>
+        <div class="row padding lower-section">
+            <div class="col-2">
+                <img src="static\images\blue_user.png">
+            </div>
+            <div class="col-8">
+                <h4 class="p1 people-names">Patty Burke</h4>
+            </div>
+            <div class="col-2">
+                <div class="input-group-prepend dash-task d-flex justify-content-center">
+                    <input class="task-check" type="checkbox">
+                </div>
+            </div>
+        </div>
+        <div class="row padding lower-section">
+            <div class="col-2">
+                <img src="static\images\blue_user.png">
+            </div>
+            <div class="col-8">
+                <h4 class="p1 people-names">Mitchell O'Connor</h4>
+            </div>
+            <div class="col-2">
+                <div class="input-group-prepend dash-task d-flex justify-content-center">
+                    <input class="task-check" type="checkbox">
+                </div>
+            </div>
+        </div>
+        <div class="row padding lower-section">
+            <div class="col-2">
+                <img src="static\images\blue_user.png">
+            </div>
+            <div class="col-8">
+                <h4 class="p1 people-names">Joanna Tides</h4>
+            </div>
+            <div class="col-2">
+                <div class="input-group-prepend dash-task d-flex justify-content-center">
+                    <input class="task-check" type="checkbox">
+                </div>
+            </div>
+        </div>
+        
+        <div class="row padding lower-section">
+            <div class="col-2">
+                <img src="static\images\blue_user.png">
+            </div>
+            <div class="col-8">
+                <h4 class="p1 people-names">David Zigya</h4>
+            </div>
+            <div class="col-2">
+                <div class="input-group-prepend dash-task d-flex justify-content-center">
+                    <input class="task-check" type="checkbox">
+                </div>
+            </div>
+        </div>
+        <div class="row padding lower-section">
+            <div class="col-12">
+                <a href="/accountability"><button class="btn-new-challenge" id="btn-launch-challenge">Add people</button></a>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+
+
+{% endblock %}

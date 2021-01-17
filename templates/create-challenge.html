@@ -14,19 +14,30 @@
     </div>
 </div>-->
 
-<div class="container-fluid">
-    <div class="row padding new-challenge-title">
-        <div class="col-12 d-flex">
-            <h1 id="new-challenge-title">Create new challenge</h1>
+ 
+<section class="container-padding" id="new-challenge">
+    <div class="container-fluid">
+        <div class="row lower-section">
+            <div class="col-12 back-container">
+                <a href="/"><button id="back-arrow"><img src="static\images\back red icon.svg"></button></a>
+            </div>
         </div>
     </div>
-</div>
-<div class="container-fluid">
-    <svg width="100%" height="160">
-        <rect width="100%" height="160" style="fill:rgb(228, 227, 227);stroke-width:0;stroke:rgb(0,0,0)" />
-      </svg>
-    <!--<img class="new-challenge-image" src="..\static\images\challenge2.jpg" alt="NOO">-->
-</div>
+    <div class="container-fluid">
+        <div class="row padding new-challenge-title">
+            <div class="col-12 d-flex">
+                <h1 id="new-challenge-title">Create new challenge</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <svg width="100%" height="160">
+            <rect width="100%" height="160" style="fill:rgb(228, 227, 227);stroke-width:0;stroke:rgb(0,0,0)" />
+          </svg>
+        <!--<img class="new-challenge-image" src="..\static\images\challenge2.jpg" alt="NOO">-->
+    </div>
+
+</section>
 
 <section class="container-padding" id="new-challenge">
     <div class="container-fluid">
@@ -35,7 +46,9 @@
                 <form method ="post" enctype="multipart/form-data">
                     <div class="form-group">
                         <input type="text" name = "challenge_name" class="form-control challenge-field-name" placeholder="Challenge Name">
-                        <a href="/accountability"><button input type = "submit" value = "save" class="btn-new-challenge" id="btn-next-page"><img src="static\images\arrow white icon.svg"></button></a>
+                        
+                        <a href="/"><button type="submit" value = "save" class="btn-new-challenge" id="btn-next-page"><img src="static\images\arrow white icon.svg"></button></a>
+                        
                         <label class="p2" id="new-challenge-field-label">Describe your challenge.</label>
                         <input type="text" class="form-control challenge-field" placeholder="eg. Stay hydrated with the CS club!">
 

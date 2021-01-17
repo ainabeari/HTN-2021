@@ -2,14 +2,22 @@
 {% block title %}Accountability {% endblock %}
 
 {% block content %}
-
-<div class="container-fluid">
-    <div class="row padding new-challenge-title">
-        <div class="col-12 d-flex">
-            <h1 id="new-challenge-title">Accountability</h1>
+<section class="container-padding" id="accountability">
+    <div class="container-fluid">
+        <div class="row lower-section">
+            <div class="col-12 back-container">
+                <a href="/new-challenge"><button id="back-arrow"><img src="static\images\back red icon.svg"></button></a>
+            </div>
         </div>
     </div>
-</div>
+    <div class="container-fluid">
+        <div class="row padding new-challenge-title">
+            <div class="col-12 d-flex">
+                <h1 id="new-challenge-title">Accountability</h1>
+            </div>
+        </div>
+    </div>
+</section>
 
 <section class="container-padding" id="accountability">
     <div class="container-fluid">
@@ -27,12 +35,16 @@
         </div>
         <div class="row padding lower-section">
             <div class="col-12">
+                <br>
                 <h3>Participants</h3>
-                <button class="btn-add-ppl">App People </button>
-
-                <img class="plus-icon" src="static\images\plus icon.svg">
+                <a href="/add-people"><button class="btn-add-ppl"><img class="plus-icon" src="static\images\user icon.svg">App People +<img class="plus-icon" src="static\images\plus icon.svg"></button></a>
             </div>
-
+        </div>
+        <div class="row padding lower-section">
+            <div class="col-12">
+                
+                <a href="/challenges/{{data['users']['user1']['challenges']['challenge_1']['challenge_name']}}"><button class="btn-new-challenge" id="btn-launch-challenge">Launch Challenge!</button></a>
+            </div>
         </div>
     </div>
 

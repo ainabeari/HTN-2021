@@ -62,11 +62,36 @@ body {
   width: 90px;
 }
 
+#ob-btn-next-page {
+  position: absolute;
+  right: 20px;
+}
+
+#btn-launch-challenge {
+  position: relative;
+  bottom: 0px;
+  right: 0px;
+
+  width: 100%;
+  height: 50px;
+  z-index: 10;
+}
+
 .btn-add-ppl {
+  width: 100%;
+  height: 50px;
   border: 2px solid #5975b7;
   background-color: white;
   box-sizing: border-box;
-  border-radius: 16px;
+  border-radius: 10px;
+  margin-top: 10px;
+
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #5975b7;
 }
 
 .plus-icon {
@@ -80,6 +105,60 @@ body {
 
 #dash-challenge {
   background: #fee8e9;
+}
+
+#home {
+  background: #e6eaf5;
+}
+
+#nope {
+  padding: 0;
+  margin: 0;
+  background: #e6eaf5;
+}
+
+#home-btn {
+  margin-bottom: 20px;
+  position: absolute;
+  bottom: 10px;
+}
+
+.img-logo {
+  margin-top: 70px;
+}
+
+.home-container {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.img-home {
+  height: 100%;
+}
+
+#ob-title {
+  margin-left: 10%;
+  margin-right: 10%;
+
+  padding-top: 60px;
+}
+
+.p3 {
+  font-family: "Abhaya Libre", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 31px;
+  color: #f7f7f7;
+}
+
+#ob-bubble {
+  background: #5975b7;
+  margin-left: 10%;
+  margin-right: 10%;
+
+  width: 80%;
 }
 
 h1 {
@@ -107,6 +186,14 @@ h1 {
   z-index: 1;
 }
 
+.car-container {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  z-index: 1;
+}
+
 #percent {
   font-family: "Abhaya Libre", serif;
   font-style: normal;
@@ -123,11 +210,22 @@ h1 {
   z-index: 1;
 }
 
+.car {
+  position: relative;
+  text-align: center;
+}
+
+.car-text {
+  font-weight: 500;
+  font-size: 20px;
+  max-width: 120px;
+}
+
 #subtitle {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 11px;
+  font-size: 14px;
   line-height: 14px;
   color: #848484;
 }
@@ -252,8 +350,8 @@ h4 {
 }
 
 .challenge-title {
-  padding-top: 120px;
-  padding-bottom: 20px;
+  padding-top: 50px;
+  padding-bottom: 10px;
   padding-left: 15px;
   background-color: #5975b7;
 }
@@ -276,8 +374,8 @@ h4 {
   font-family: "Abhaya Libre", serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 55px;
-  line-height: 14px;
+  font-size: 45px;
+  line-height: 40px;
   display: flex;
   align-items: center;
   color: #f7f7f7;
@@ -360,7 +458,7 @@ h4 {
 }
 
 .new-challenge-title {
-  padding-top: 80px;
+  padding-top: 50px;
   padding-bottom: 10px;
   padding-left: 15px;
 }
@@ -456,6 +554,40 @@ h4 {
 .btn-secondary:focus {
   outline: none;
   box-shadow: none !important;
+}
+
+.people-names {
+  margin-top: 15px;
+  margin-left: 5px;
+  font-size: 16px;
+}
+
+#people-title {
+  margin-top: 10px;
+}
+
+#back-arrow {
+  border-width: 0;
+  background-color: #f7f7f7;
+  margin-top: 20px;
+}
+
+.back-container {
+  padding: 0;
+}
+
+.arrow-special {
+  margin: 0;
+  border-width: 0;
+  background-color: #5975b7;
+  color: #5975b7;
+}
+
+#arrow-special-container {
+  margin-top: 0px;
+  padding-top: 30px;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .pic {

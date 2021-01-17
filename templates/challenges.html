@@ -4,20 +4,26 @@
 {% block content %}
  
 <div class="container-fluid" >
+    
     <div>
+        <div class="row challenge-title" id="arrow-special-container">
+            <div class="col-12 back-container ">
+                <a href="/"><button class="arrow-special"><img src="\static\images\back red icon.svg"></button></a>
+            </div>
+        </div>
         <div class="row challenge-title">
-            <div class="col-12 d-flex ">
-                <h1 id="challenge-title">Drink Water</h1>
+            <div class="col-12">
+                <h1 id="challenge-title">{{data['users']['user1']['challenges']['challenge_1']['challenge_name']}}</h1>
             </div>
         </div>
         <div class="row challenge-subtitle">
             <div class="col-12 d-flex ">
-                <h1 id="challenge-subtitle">69 days remaing</h1>
+                <h1 id="challenge-subtitle">24 days remaing</h1>
             </div>
         </div>
         <div class="row challenge-subsubtitle">
             <div class="col-12 d-flex ">
-                <h1 id="challenge-subsubtitle">Stay hydrated by drinking 7 cups of water a day with the CS club!</h1>
+                <h1 id="challenge-subsubtitle">{{data['users']['user1']['challenges']['challenge_1']['description']}}</h1>
             </div>
         </div>
     </div>
@@ -37,11 +43,10 @@
                             <svg width="24" height="37" viewBox="0 0 24 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M11.7966 0C5.91674 7.15184 0.474579 15.6362 0.474579 23.2374C0.474579 30.8387 5.54724 37 11.7966 37C18.046 37 23.1186 30.8387 23.1186 23.2374C23.1186 15.6362 17.6764 7.15184 11.7966 0ZM4.56651 21.8082C4.71387 21.788 4.86369 21.8029 5.00474 21.8518C5.1458 21.9006 5.27443 21.9822 5.38099 22.0903C5.48754 22.1985 5.56927 22.3304 5.62003 22.4762C5.6708 22.622 5.68928 22.778 5.6741 22.9323C5.46637 25.345 6.86395 28.616 8.42767 29.8056C8.54601 29.8783 8.64846 29.9762 8.72843 30.0927C8.8084 30.2093 8.86413 30.342 8.89203 30.4824C8.91993 30.6228 8.91938 30.7678 8.89043 30.9079C8.86147 31.0481 8.80475 31.1804 8.7239 31.2963C8.64305 31.4122 8.53987 31.5092 8.42098 31.581C8.3021 31.6528 8.17014 31.6978 8.03358 31.7132C7.89703 31.7286 7.7589 31.7139 7.62808 31.6703C7.49725 31.6266 7.37663 31.5549 7.27395 31.4596C4.91405 29.6645 3.42279 26.0336 3.70505 22.7557C3.72118 22.518 3.81591 22.2935 3.97305 22.1207C4.13019 21.9478 4.33997 21.8374 4.56651 21.8082Z" fill="#5975B7"/>
                                 </svg>
-                                
                         </div>
                         <div class="col-8 text-left dash-task">
-                            <h4 id="task-card-text-challenge">Drink Water</h4>
-                            <p class="p2 text-left" id="task-card-text-challenge-p">Drink up gang gang</p>
+                            <h4 id="task-card-text-challenge">{{data['users']['user1']['challenges']['challenge_1']['task']}}</h4>
+                            <p class="p2 text-left" id="task-card-text-challenge-p">{{data['users']['user1']['challenges']['challenge_1']['task_description']}}</p>
                         </div>
                         <div class="input-group-prepend col-1 dash-task d-flex justify-content-center">
                             <input class="task-check" type="checkbox">
@@ -59,7 +64,7 @@
         </div>
         <div class="row padding lower-section">
             <div class="col-12 d-flex">
-                <img src="static\images\visualization graphic 1.svg">
+                <img src="\static\images\visualization graphic 1.svg">
             </div> 
         </div>
         
@@ -73,16 +78,16 @@
         </div>
         <div class="row padding lower-section">
             <div class="col-12 d-flex">
-                <img src="static\images\rank1.png">
+                <img src="\static\images\rank1.png">
             </div> 
             <div class="col-12 d-flex">
-                <img src="static\images\rank2.png">
+                <img src="\static\images\rank2.png">
             </div> 
             <div class="col-12 d-flex">
-                <img src="static\images\rank3.png">
+                <img src="\static\images\rank3.png">
             </div> 
             <div class="col-12 d-flex">
-                <img src="static\images\rank4.png">
+                <img src="\static\images\rank4.png">
             </div> 
         </div>
     </div>

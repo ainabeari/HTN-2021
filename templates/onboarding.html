@@ -1,0 +1,32 @@
+{% extends "base2.html" %}
+{% block title %} Home {% endblock %}
+
+{% block content %}
+
+<section id="onboarding">
+
+    <div class="row padding lower-section" id="ob-title">
+        <div class="col-12">
+            <h3>Welcome to tasq!</h3>
+        </div>
+    </div>
+
+    <div class="container-fluid component-padding" id="ob-bubble">
+        <div class="row padding lower-section">
+            <div class="col-12 d-flex component-title">
+                <img src="static\images\onboarding graphic.svg">
+            </div> 
+            <div class="col-12 d-flex component-title">
+                <p class="p3">Welcome to tasq! The social accountability app that will keep you motivated and commited to your goals. Grab your friends and decide on an incentive to keep you going. Let’s get started!</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row padding lower-section">
+            <a href="/"><button type="submit" class="btn-new-challenge" id="ob-btn-next-page"><img src="static\images\arrow white icon.svg"></button></a>
+        </div>
+    </div>
+
+</section>
+
+{% endblock %}

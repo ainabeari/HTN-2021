@@ -3,26 +3,29 @@
 		"user1": {
 			"name": "Obe",
 			"challenges": {
-				"challenge 1": {
-					"challenge_name": "Drink Water Everyday",
-					"description": "Drink three cups at breakfast",
+				"challenge_1": {
+					"challenge_name": "Drink Water Everyday",   
+					"description": "Stay hydrated by drinking 7 cups of water a day with the CS club!", 
+					"task": "Drink Water",
+					"task_description": "Drink up gang gang",
 					"type": "daily",
-					"complete": true,
+					"complete": false,
 					"total days": 14,
 					"current day": 2,
 					"progress": "14%"
-					}
-				},
-				"challenge 2": {
-					"challenge_name": "Workout",
-					"description": "Let's get fit",
+					},
+				"challenge_2": {
+					"challenge_name": "Workout Twice a Week",
+					"description": "Let's get fit together!",
+					"task": "30 Min Workout",
+					"task_description": "Let get those gains",
 					"type": "weekly",
-					"complete": true,
+					"complete": false,
 					"total days": 14,
 					"current day": 2,
 					"progress": "14%"
-				}
 				}
 			}
 		}
-
+	}
+}
