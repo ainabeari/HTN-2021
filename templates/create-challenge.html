@@ -2,80 +2,77 @@
 {% block title %} New Challenge  {% endblock %}
 
 {% block content %}
-
+<!--
+<div class="row padding">
+    <div class="col-12 d-flex ">
+        <h1 id="new-challenge-title">{{data['users']['user1']['name']}}</h1>
+        <form method ="post" enctype="multipart/form-data">
+            <input name="title" id="title">
+            <input name="fruit" id="fruit">
+            <input type = "submit" value = "save">
+        </form>
+    </div>
+</div>-->
+ 
 <div class="container-fluid">
-    <div class="row padding">
+    <div class="row padding new-challenge-title">
+        <div class="col-12 d-flex">
+            <h1 id="new-challenge-title">Create new challenge</h1>
+        </div>
+    </div>
+    <div class="row">
         <div class="col-12 d-flex ">
-            <h1 id="new-challenge-title">{{data['users']['user1']['name']}}</h1>
-            <form method ="post" enctype="multipart/form-data">
-                <input name="title" id="title">
-                <input name="fruit" id="fruit">
-                <input type = "submit" value = "save">
-            </form>
+            
         </div>
     </div>
-    <div class="row padding">
-        <div class="col-12 d-flex ">
-            <h1 id="new-challenge-title">[image]</h1>
-        </div>
-    </div>
+</div>
+<div class="container-fluid">
+    <img class="new-challenge-image" src="..\static\images\challenge2.jpg" alt="NOO">
 </div>
 
-<div class="container-fluid">
-    <div class="row padding lower-section">
-        <div class="col-12 task-panel">
-            <form>
-                <div class="form-group">
-                    <input type="challengeName" class="form-control" placeholder="Add Challenge Name">
-                </div>
-            </form>
-        </div> 
-    </div>
-    <div class="form-group row padding lower-section">
-        <label for="example-date-input" class="col-2 col-form-label">Start Date</label>
-        <div class="col-10">
-          <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+<section class="container-padding" id="new-challenge">
+    <div class="container-fluid">
+        <div class="row padding lower-section">
+            <div class="col-12 task-panel">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control challenge-field-name" placeholder="Challenge Name">
+
+                        <label class="p2" id="new-challenge-field-label">Describe your challenge.</label>
+                        <input type="text" class="form-control challenge-field" placeholder="eg. Stay hydrated with the CS club!">
+
+                        <label class="p2" id="new-challenge-field-label">What is the task </label>
+                        <input type="text" class="form-control challenge-field" placeholder="eg. Drink 7 glasses of water a day.">
+
+                        <div class="row lower-section">
+                            <label class="p2 col-5 mr-4" id="new-challenge-date-label">Start Date</label>
+                            <label class="p2 col-5 ml-4" id="new-challenge-date-label">End Date</label>
+                        </div>
+
+                        <div class="row lower-section">
+                            <input class="form-control challenge-field col-5 mr-4" type="date" value="2020-01-01" id="start-date-input">
+                            <input class="form-control challenge-field col-5 ml-4" type="date" value="2020-01-01" id="end-date-input">
+                        </div> 
+                        
+                        <div class="row lower-section">
+                            <input type="text" class="form-control challenge-field col-2" placeholder="1" id="new-challenge-count">
+                            <label class="p2 col-8" id="new-challenge-field-count-label"> Time(s) per day </label>
+                        </div>
+
+                        <label class="p1" id="new-challenge-field-label">Repeat Every Day</label>
+                        <input type="checkbox" checked data-toggle="toggle" data-size="xs" class="toggler">
+                        
+                    </div>
+                </form>
+            </div> 
         </div>
     </div>
-    <div class="form-group row padding lower-section">
-        <label for="example-date-input" class="col-2 col-form-label">End Date</label>
-        <div class="col-10">
-          <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
-        </div>
+    <div class="container-fluid">
+    
     </div>
-</div>
-<div class="container-fluid">
-    <div class="row padding lower-section">
-        <div class="col-12 d-flex">
-            <h3>Incentive</h3>
-        </div> 
-    </div>
-    <div class="row padding lower-section">
-        <div class="col-12 d-flex">
-            <h4 id="incentive-text">Loser has to buy lunch</h4>
-        </div> 
-    </div>
-    <div class="row padding lower-section">
-        <div class="col-12 d-flex">
-            <h3>Activity</h3>
-        </div> 
-    </div>
-    <div class="row padding lower-section">
-        <div class="col-12 d-flex">
-            <h4 id="incentive-text">placeholder for image</h4>
-        </div> 
-    </div>
-    <div class="row padding lower-section">
-        <div class="col-12 d-flex">
-            <h3>Ranking</h3>
-        </div> 
-    </div>
-    <div class="row padding lower-section">
-        <div class="col-12 d-flex">
-            <h4 id="incentive-text">placeholder for image</h4>
-        </div> 
-    </div>
-</div>
+
+</section>
+
 
 
 {% endblock%}

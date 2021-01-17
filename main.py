@@ -5,7 +5,7 @@ app = Flask(__name__)
 # Reading User Data
 ArielleDir = 'C:\\Users\\Arielle\\Documents\\GitHub\\HTN-2021\\data\\user_data.json'
 AllenDir = 'C:\\Users\\Allen\\Documents\\GitHub\\HTN-2021\\data\\user_data.json'
-with open(ArielleDir, "r") as read_file:
+with open(AllenDir, "r") as read_file:
     data = json.load(read_file)  # dictionary type
 
 # Assigning variables for the user
